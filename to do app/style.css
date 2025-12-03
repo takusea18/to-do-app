@@ -1,0 +1,17 @@
+body{
+    font-family: sans-serif;
+    width: 400px;
+    margin: 50px; auto;
+}
+
+li{
+    margin: 8px 0;
+    padding: 6px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+}
