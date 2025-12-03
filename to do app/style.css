@@ -1,7 +1,31 @@
+.loading-title{
+    font-size: 48px;   /*大きい文字*/
+    font-weight: bold; /*太字*/
+    font-family: 'Times New Roman', Times, serif;  /*フォントの種類*/
+    color: cadetblue; /*文字の色*/
+    position: relative; /*文字の位置について。動かすためrelative*/
+    width: fit-content; 
+    animation: slide-in 1.2s ease-out forwards;
+    opacity: 0;
+    margin: 20px auto;  /*中央寄せ*/
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 body{
     font-family: sans-serif;
     width: 400px;
-    margin: 50px; auto;
+    margin: 50px; auto:
 }
 
 li{
