@@ -1,17 +1,40 @@
+/* 全画面表示*/
+
+.screen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 最初の文字*/
+
 .loading-title{
-    font-size: 48px;   /*大きい文字*/
+    font-size: 200px;   /*大きい文字*/
     font-weight: bold; /*太字*/
     font-family: 'Times New Roman', Times, serif;  /*フォントの種類*/
-    color: cadetblue; /*文字の色*/
-    position: relative; /*文字の位置について。動かすためrelative*/
+    color: black; /*文字の色*/
     width: fit-content; 
     animation: slide-in 1.2s ease-out forwards;
     opacity: 0;
     margin: 20px auto;  /*中央寄せ*/
 }
+
+/* ボタン*/
+.start-btn {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 40px;
+    margin-top: 40px;
+    animation: slide-in 1.2s ease-out forwards;
+    opacity: 0;
+}
+
 @keyframes slide-in {
   0% {
-    transform: translateX(100%);
+    transform: translateX(120%);
     opacity: 0;
   }
   60% {
@@ -24,8 +47,8 @@
 }
 body{
     font-family: sans-serif;
-    width: 400px;
-    margin: 50px; auto:
+    margin: 0;
+    padding: 0;
 }
 
 li{
@@ -38,4 +61,20 @@ li{
 
 button{
     cursor: pointer;
+}
+
+/*起動後メインページ*/
+h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#add-btn{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/*ボタン押すと画面が消える*/
+.hidden{
+  display: none;
 }
