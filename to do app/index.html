@@ -14,11 +14,27 @@
 
         <!--起動後画面-->
         <div id="screen2" class="screen hidden">
-        <h1>What do you want to do?</h1>
-        <input id="todo-input" type="text" placeholder="やることを入力">
-        <button id="add-btn">add</button>
+            <h1>What is your goal?</h1>
 
-        <ul id="todo-list"></ul>
+            <div class="todo-container">
+
+                <!--入力フォーム-->
+                <div class="form-box">
+                    <input id="task-title" type="text" placeholder="タスク名">
+                    <input id="task-date" type="date">
+                    
+                    <select id="task-category">
+                        <option value="work">WORK</option>
+                        <option value="health">HEALTH</option>
+                        <option value="study">STUDY</option>
+                        <option value="hobby">HOBBY</option>
+                    </select>
+                    <button id="task-add-btn">add</button>
+
+                    <ul id="task-list"></ul>
+                </div>
+                
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
